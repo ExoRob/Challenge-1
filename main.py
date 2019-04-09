@@ -20,7 +20,7 @@ data = load_csv("october")
 
 practices = set(data["Practice"])
 
-for practice_id in list(practices)[:1]:
+for practice_id in list(practices):
     practice_data = data[data["Practice"] == practice_id]
 
     sorted_data = practice_data.sort_values("Number of Items", ascending=False)
